@@ -10,9 +10,12 @@
             margin: 0;
             box-sizing: border-box;
         }
+        body{
+            background: #ccc;
+        }
         .container{ 
             margin-top: 5%;
-            margin-left: 40%;
+            margin-left: 35%;
             width: 30em;
             height: 35em;
             background: #fff;
@@ -25,6 +28,7 @@
             border-radius: 1em;
             border:1px solid #ccc;
         }
+        
         input[type="email"]{
             margin-top: 5%;
             padding: 2%;
@@ -37,10 +41,17 @@
             border-radius: 1em;
             border:1px solid #ccc;
         }
+        input[type="checkbox"]{
+            margin-top: 5%;
+            padding: 2%;
+            border-radius: 1em;
+            border:1px solid #ccc;
+        }
        .login{
         padding: 10em;
        }  
        h1{
+        color: rgb(37, 69, 252);
         margin-bottom: 20%;
        }
        button{
@@ -52,16 +63,20 @@
         background: rgb(53, 83, 255);
         border: none;
        }
+       button:hover{
+        background:rgb(6, 42, 244) ;
+       }
       </style>
     </head>
 <body>
     <div class="container">
        <div class="login">
-        <form>
+        <form action="www.submitted.com">
             <h1>Login Page</h1>
             <input type="text" placeholder="Full name" name="fn">
             <input type="email" placeholder="Email" name="em">
-            <input type="password" placeholder="Password" name="pass">
+            <input type="password" placeholder="Password" name="pass" pattern="[1-9][a-z]">
+            <input type="checkbox">       Show Password
             <button>Sign In</button>
         </form>
        </div>
